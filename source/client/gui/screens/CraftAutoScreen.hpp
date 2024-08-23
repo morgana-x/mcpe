@@ -4,8 +4,6 @@
 #include "../Screen.hpp"
 #include "../Components/Button.hpp"
 #include "../Components/CraftButton.hpp"
-#include "world/item/Crafting/Recipes.hpp"
-#include "world/item/Crafting/Recipe.hpp"
 
 class CraftAutoScreen : public Screen
 {
@@ -18,14 +16,8 @@ public:
 	virtual void mouseReleased(int x, int y, int type) override;
 	virtual void removed() override;
 
-	void addItem(Recipe* param_1);
-
 private:
-	void setupPositions();
-	void craftSelectedItem();
-	void recheckRecipes();
-	Button m_btnClose;
-	Button m_btnCraftSelectedItemButton;
+	Button m_btnUnknown;
 	//CraftButton m_btnUnknown2;
 	//Button m_btnPause;
 };

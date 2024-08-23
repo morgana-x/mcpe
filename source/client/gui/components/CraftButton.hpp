@@ -12,7 +12,5 @@ public:
 
 	void init(Textures* param_1);
 
-	void setSize(float width, float height);
-	void setSize(int width, int height);
 private:
 };

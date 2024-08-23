@@ -1,43 +1,23 @@
-//https://git.atipls.com/atipls/gists-public/src/branch/main/
+/********************************************************************
+	Minecraft: Pocket Edition - Decompilation Project
+	Copyright (C) 2023 iProgramInCpp
+
+	The following code is licensed under the BSD 1 clause license.
+	SPDX-License-Identifier: BSD-1-Clause
+ ********************************************************************/
+
 #pragma once
 
-#include <string>
 #include "Button.hpp"
-
 
 class ImageButton : public Button
 {
 public:
-	ImageButton(int id, std::string const& text);
-	//ImageButton(int id, std::string const& text, ImageDef const& imageDef);
-
-	void render(Minecraft*, int, int) override;
-	void renderBg(Minecraft*, int, int) override {}
-    virtual void setYOffset(int yOffset) {
-        m_yOffset = yOffset;
-    }
-
-    virtual void setupDefault();
-
-    virtual bool isSecondImage(bool isHovered) {
-        return isHovered;
-    }
-
-   // void setImageDef(ImageDef const& imageDef, bool setSizes);
+	ImageButton(int id, int x, int y, const std::string& str);
+	ImageButton(int id, int x, int y, int width, int height, const std::string& str);
+	ImageButton(int id, const std::string& str);
+	//ImageButton(int id, int param_1, const std::string& str, ImageDef *param_3);
+	//void setImageDef(ImageDef* param_1, bool param_2);
 private:
-protected:
-    std::string m_textureName;
-    int field_34;
-    int field_38;
-    float field_3C;
-    float field_40;
-    int field_44;
-    int field_48;
-    int field_4C;
-    int field_50;
-    char m_renderPart;
-    //Vec4 m_color;
-    char field_68;
-    int m_yOffset;
 };
 

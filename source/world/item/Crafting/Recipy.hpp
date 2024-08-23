@@ -3,7 +3,7 @@
 #include "../ItemInstance.hpp";
 #include "../Inventory/CraftingContainer.hpp";
 
-class Recipe
+class Recipy
 {
 public:
 	int size();
