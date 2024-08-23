@@ -3,7 +3,6 @@
 #include "../level/Level.hpp"
 WorkBenchTile::WorkBenchTile(int id, Material *) : Tile(id, TEXTURE_PLANKS, Material::wood)
 {
-
 } 
 
 int WorkBenchTile::getTexture(int paramDir)

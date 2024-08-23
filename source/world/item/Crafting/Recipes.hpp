@@ -2,14 +2,14 @@
 
 #include "../Item.hpp"
 #include "../Inventory/CraftingContainer.hpp"
-
+#include "Recipe.hpp"
 class Recipes
 {
 public:
 	static int ANY_AUX_VALUE;
 	static Recipes instance;
 
-	//static Recipy[] recipes;
+	static std::array<Recipe, 512> recipes;
 
 
 	Recipes();
@@ -17,6 +17,6 @@ public:
 	virtual ItemInstance getItemFor(CraftingContainer paramCraftingContainer);
 	
 private:
-	virtual void addShapedRecipy(ItemInstance paramItemInstance, int paramVarArgs); // Todo: Add proper paramVarArg class
-	virtual void addShapelessRecipy(ItemInstance paramItemInstace, int paramVarArgs);
+	virtual void addShapedRecipe(ItemInstance paramItemInstance, int paramVarArgs); // Todo: Add proper paramVarArg class
+	virtual void addShapelessRecipe(ItemInstance paramItemInstace, int paramVarArgs);
 };
