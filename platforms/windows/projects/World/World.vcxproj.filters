@@ -485,14 +485,14 @@
     <ClCompile Include="..\..\..\..\source\world\item\Crafting\Recipes.cpp">
       <Filter>Source Files\Item\Crafting</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\source\world\item\Crafting\Recipy.cpp">
-      <Filter>Source Files\Item\Crafting</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\source\world\item\Inventory\CraftingContainer.cpp">
       <Filter>Source Files\Item\Inventory</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\source\world\tile\WorkbenchTile.cpp">
       <Filter>Source Files\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\world\item\Crafting\Recipe.cpp">
+      <Filter>Source Files\Item\Crafting</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -823,7 +823,7 @@
     <ClInclude Include="..\..\..\..\source\world\item\Crafting\Recipes.hpp">
       <Filter>Header Files\Item\Crafting</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\source\world\item\Crafting\Recipy.hpp">
+    <ClInclude Include="..\..\..\..\source\world\item\Crafting\Recipe.hpp">
       <Filter>Header Files\Item\Crafting</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\source\world\item\Inventory\CraftingContainer.hpp">
